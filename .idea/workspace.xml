@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b610cf95-c0e9-483f-ac7c-f2e82a2aaea0" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/examples/registrar.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/BancoBrasilBoleto.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/BancoBrasilBoleto.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasilClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Exceptions/BoletoException.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Factories/BoletoFactory.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Helpers/Fractal.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceBoleto.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceSoapClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Soap/SoapClient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/Transformers/BoletoTransformer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/examples/registrar.php" beforeDir="false" afterPath="$PROJECT_DIR$/examples/registrar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,15 +27,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="composer.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
@@ -39,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="registrar.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registrar.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/examples/registrar.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="648">
+              <caret line="41" column="29" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -51,8 +48,53 @@
       <file leaf-file-name="BancoBrasil.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="13" selection-start-line="13" selection-end-line="13" />
+            <state relative-caret-position="414">
+              <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+              <folding>
+                <element signature="e#131#181#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Config.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Config.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="540">
+              <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BoletoException.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Exceptions/BoletoException.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SoapClient.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Soap/SoapClient.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="34" selection-start-line="34" selection-end-line="37" selection-end-column="5" />
+              <folding>
+                <element signature="e#136#177#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServiceBoleto.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceBoleto.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+              <folding>
+                <element signature="e#140#174#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -66,6 +108,15 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ServiceResponseTracker</find>
+      <find>formatInput</find>
+      <find>parseRequest</find>
+      <find>getSoapOptionsWithSingleElementArrays</find>
+      <find>createWithSingleElementArrays</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -75,9 +126,18 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/composer.json" />
-        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Exceptions/BoletoException.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Helpers/Fractal.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Transformers/BoletoTransformer.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Factories/BoletoFactory.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceSoapClient.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php" />
         <option value="$PROJECT_DIR$/examples/registrar.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Config.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasilClient.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceBoleto.php" />
+        <option value="$PROJECT_DIR$/src/BancoBrasilBoleto/Soap/SoapClient.php" />
       </list>
     </option>
   </component>
@@ -90,6 +150,35 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/league/fractal" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/filesystem" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/http" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/session" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/support" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/contracts" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/database" />
+      <path value="$PROJECT_DIR$/vendor/illuminate/container" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/debug" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+    </include_path>
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
     <option name="y" value="-11" />
@@ -101,37 +190,56 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BancoBrasilBoleto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BancoBrasilBoleto" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="examples" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BancoBrasilBoleto" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
-              <item name="BancoBrasilBoleto" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="src" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="BancoBrasilBoleto" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="BancoBrasilBoleto" type="462c0819:PsiDirectoryNode" />
+              <item name="Soap" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="BancoBrasilBoleto" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="bcb0276e:PhpExternalLibrariesNodePatcher$PatchedExternalLibrariesNode" />
+              <item name="PHP Runtime" type="20ee2d1f:SyntheticLibraryElementNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,18 +276,51 @@
       <workItem from="1524163453003" duration="79000" />
       <workItem from="1524163537789" duration="4000" />
       <workItem from="1524163560450" duration="12000" />
-      <workItem from="1524163581607" duration="57000" />
+      <workItem from="1524163581607" duration="404000" />
+      <workItem from="1524164584355" duration="868000" />
+      <workItem from="1524226319191" duration="3035000" />
+      <workItem from="1524230438194" duration="90000" />
+      <workItem from="1524230535977" duration="14000" />
+      <workItem from="1524230559435" duration="1592000" />
+      <workItem from="1524485474077" duration="5000" />
+      <workItem from="1524489530131" duration="690000" />
+      <workItem from="1524515682006" duration="40000" />
+      <workItem from="1524515731103" duration="44000" />
+      <workItem from="1524515783077" duration="77000" />
+      <workItem from="1524515867391" duration="48000" />
+      <workItem from="1524515921738" duration="17000" />
+      <workItem from="1524515946804" duration="184000" />
+      <workItem from="1524516144545" duration="38000" />
+      <workItem from="1524516189375" duration="36000" />
+      <workItem from="1524516243919" duration="31000" />
+      <workItem from="1524516281114" duration="108000" />
+      <workItem from="1524516400030" duration="310000" />
+      <workItem from="1524572354200" duration="639000" />
+      <workItem from="1524574369845" duration="404000" />
+      <workItem from="1524574791343" duration="658000" />
+      <workItem from="1524575456401" duration="140000" />
+      <workItem from="1524575605408" duration="13000" />
+      <workItem from="1524575622527" duration="328000" />
+      <workItem from="1524575965287" duration="391000" />
+      <workItem from="1524576365439" duration="2298000" />
+      <workItem from="1524579794523" duration="419000" />
+      <workItem from="1524580232396" duration="957000" />
+      <workItem from="1524581209713" duration="226000" />
+      <workItem from="1524582055507" duration="987000" />
+      <workItem from="1524835516955" duration="1027000" />
+      <workItem from="1524836577461" duration="26000" />
+      <workItem from="1524836711146" duration="891000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="561000" />
+    <option name="totallyTimeSpent" value="17539000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1602" height="865" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27027026" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4253539" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -207,6 +348,181 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceBoleto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="1" lean-forward="true" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="27" selection-start-line="13" selection-start-column="27" selection-end-line="13" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" column="37" lean-forward="true" selection-start-line="13" selection-start-column="37" selection-end-line="13" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="20" column="64" selection-start-line="20" selection-start-column="64" selection-end-line="20" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="9" selection-start-line="3" selection-start-column="9" selection-end-line="3" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/examples/registrar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -307,13 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -321,10 +630,96 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Exceptions/BoletoException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Helpers/Fractal.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Transformers/BoletoTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/stubs/soap/soap.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="328" column="20" selection-start-line="328" selection-start-column="20" selection-end-line="328" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/examples/registrar.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="648">
+          <caret line="41" column="29" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="35" column="5" selection-start-line="35" selection-start-column="5" selection-end-line="35" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Factories/BoletoFactory.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasilClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/BancoBrasil.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="31" column="44" selection-start-line="31" selection-start-column="44" selection-end-line="31" selection-end-column="44" />
+          <folding>
+            <element signature="e#131#181#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceBoleto.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+          <folding>
+            <element signature="e#140#174#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Services/ServiceSoapClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BancoBrasilBoleto/Soap/SoapClient.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="34" selection-start-line="34" selection-end-line="37" selection-end-column="5" />
+          <folding>
+            <element signature="e#136#177#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
